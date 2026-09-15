@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Les routes /api/innovations et /api/sync-now sont gérées directement
+# par les fonctions Netlify (voir `config.path` dans chaque fichier de
+# netlify/functions/). Aucune redirection supplémentaire n'est nécessaire.

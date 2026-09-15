@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Innovation Radar · Aromatech Afrique</title>
+<link rel="icon" href="assets/logo/aromatech-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar">
+    <div class="brand">
+      <img src="assets/logo/aromatech-logo.png" alt="Aromatech">
+    </div>
+    <div style="padding:0 6px">
+      <div class="brand-title">Innovation Radar</div>
+      <div class="brand-sub">Aromatech Afrique</div>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item active" data-view="home">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+        <span data-i18n="navHome">Home</span>
+      </button>
+      <button class="nav-item" data-view="flavor-trends">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8M21 7h-6v6"/></svg>
+        <span data-i18n="navFlavorTrends">Flavor Trends</span>
+      </button>
+      <button class="nav-item" data-view="flavor-report">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20V4H6.5A2.5 2.5 0 004 6.5v13z"/><path d="M8 7h8M8 11h8"/></svg>
+        <span data-i18n="navFlavorReport">Flavor Trends 2026</span>
+      </button>
+      <button class="nav-item" data-view="beverage-trends">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 21h8M12 17v4M6 3h12l-1.5 9a4.5 4.5 0 01-9 0L6 3z"/></svg>
+        <span data-i18n="navBeverageTrends">Beverage Trends</span>
+      </button>
+      <button class="nav-item" data-view="flavor-library">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20V4H6.5A2.5 2.5 0 004 6.5v13z"/><path d="M4 19.5V17"/></svg>
+        <span data-i18n="navFlavorLibrary">African Flavor Library</span>
+      </button>
+      <button class="nav-item" data-view="country">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 5.7 4 9s-1.5 6.4-4 9c-2.5-2.6-4-5.7-4-9s1.5-6.4 4-9z"/></svg>
+        <span data-i18n="navCountry">Country View</span>
+      </button>
+      <button class="nav-item" data-view="opportunities">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/></svg>
+        <span data-i18n="navOpportunities">Opportunities</span>
+      </button>
+      <button class="nav-item" data-view="client-watch">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <span data-i18n="navClientWatch">Veille Clients</span>
+      </button>
+      <button class="nav-item" data-view="competitor-watch">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8" fill="currentColor"/></svg>
+        <span data-i18n="navCompetitorWatch">Veille Concurrents</span>
+      </button>
+      <button class="nav-item" data-view="shortlist">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.9 6.6L22 9.3l-5 4.9 1.2 7.1L12 17.8 5.8 21.3 7 14.2 2 9.3l7.1-.7z"/></svg>
+        <span data-i18n="navShortlist">My Shortlist</span>
+      </button>
+      <button class="nav-item" data-view="sources">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        <span data-i18n="navSources">Sources</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-foot">Innovation Radar v2.0 — + Beverage Trends 2026</div>
+  </aside>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="main">
+
+    <div class="topbar">
+      <div class="search-box">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="searchInput" type="text" data-i18n-placeholder="searchPlaceholder" placeholder="Rechercher une innovation…">
+      </div>
+      <div class="top-actions">
+        <div class="sync-status" id="syncStatus"></div>
+        <div class="lang-toggle">
+          <button data-lang="fr" class="active">FR</button>
+          <button data-lang="en">EN</button>
+        </div>
+        <button class="btn btn-primary" id="syncBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 12a9 9 0 11-3-6.7M21 4v5h-5"/></svg>
+          <span class="lbl" data-i18n="syncNow">SYNC NOW</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ============ HOME ============ -->
+    <section class="view active" id="view-home">
+      <div class="view-head">
+        <div>
+          <div class="eyebrow" data-i18n="dashSub">Veille marketing automatisée</div>
+          <h2>🚀 <span data-i18n="dashTitle">Innovation Radar</span></h2>
+        </div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-num" id="statTotal">0</div><div class="stat-label" data-i18n="statTotal">Total innovations</div></div>
+        <div class="stat-card"><div class="stat-num" id="stat24h">0</div><div class="stat-label" data-i18n="stat24h">Nouveautés 24h</div></div>
+        <div class="stat-card"><div class="stat-num" id="stat7d">0</div><div class="stat-label" data-i18n="stat7d">Nouveautés 7 jours</div></div>
+        <div class="stat-card"><div class="stat-num" id="statSources">0</div><div class="stat-label" data-i18n="statSources">Sources surveillées</div></div>
+      </div>
+      <div class="view-head"><h2 style="font-size:17px" data-i18n="navLatest">Latest Innovations</h2></div>
+      <div class="cards-grid" id="dashboardGrid"></div>
+    </section>
+
+    <!-- ============ FLAVOR TRENDS (Latest Innovations + Trend Radar + Innovation of the Week) ============ -->
+    <section class="view" id="view-flavor-trends">
+      <div class="level-strip">
+        <span class="level-chip" data-i18n="level1">QUOI ?</span>
+      </div>
+      <div class="view-head">
+        <div><div class="eyebrow" data-i18n="navFlavorTrends">Flavor Trends</div><h2>🆕 <span data-i18n="iowTitle">Innovation of the Week</span></h2></div>
+      </div>
+      <div id="iowBox" style="margin-bottom:26px"></div>
+
+      <div class="view-head">
+        <div><h2 style="font-size:19px">📈 <span data-i18n="trendTitle">Trending Now</span></h2></div>
+      </div>
+      <div class="card" style="padding:24px 28px;margin-bottom:26px">
+        <div class="trend-list" id="trendList"></div>
+      </div>
+
+      <div class="view-head">
+        <div><h2 style="font-size:19px">🔎 <span data-i18n="navLatest">Latest Innovations</span></h2></div>
+      </div>
+      <div class="filters-bar">
+        <select class="filter-select" id="filterApp"></select>
+        <select class="filter-select" id="filterTrend"></select>
+        <select class="filter-select" id="filterMarket"></select>
+        <select class="filter-select" id="filterDate">
+          <option value="">Date</option>
+          <option value="today" data-i18n="today">Aujourd'hui</option>
+          <option value="last7" data-i18n="last7">7 derniers jours</option>
+          <option value="last30" data-i18n="last30">30 derniers jours</option>
+          <option value="last90" data-i18n="last90">3 derniers mois</option>
+        </select>
+        <div class="view-toggle">
+          <button class="active" data-layout="grid"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></button>
+          <button data-layout="list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+        </div>
+      </div>
+      <div class="cards-grid" id="latestGrid"></div>
+    </section>
+
+    <!-- ============ FLAVOR TRENDS 2026 (editorial report) ============ -->
+    <section class="view fr2026" id="view-flavor-report">
+      <div class="fr-header">
+        <div>
+          <div class="fr-kicker" data-i18n="navFlavorReport">Africa Flavor Trends</div>
+          <h1 data-i18n="frTitle">AFRICA FLAVOR TRENDS 2026</h1>
+          <div class="fr-sub" data-i18n="frSubtitle">Les tendances de saveurs qui façonnent l'industrie agroalimentaire africaine</div>
+        </div>
+        <div class="fr-meta" data-i18n="frTagline">Aromatech Afrique · Tunisie | Algérie | Afrique · 2026</div>
+      </div>
+
+      <nav class="fr-subnav">
+        <a href="#fr-overview" data-i18n="frNavOverview">Overview</a>
+        <a href="#fr-beverages" data-i18n="frNavBeverages">Beverages</a>
+        <a href="#fr-dairy" data-i18n="frNavDairy">Dairy</a>
+        <a href="#fr-savory" data-i18n="frNavSavory">Savory</a>
+        <a href="#fr-map" data-i18n="frNavMap">Regional Map</a>
+        <a href="#fr-opportunities" data-i18n="frNavOpportunities">Opportunities</a>
+      </nav>
+
+      <div class="fr-hero">
+        <p data-i18n="frHeroText">Les consommateurs africains recherchent désormais des expériences gustatives…</p>
+        <div class="fr-kpi-row" id="frKpiRow"></div>
+      </div>
+
+      <!-- OVERVIEW -->
+      <div class="fr-section" id="fr-overview">
+        <h2 class="fr-section-title" data-i18n="frOverviewTitle">Africa Flavor Landscape 2026</h2>
+        <div class="fr-overview-grid" id="frOverviewGrid" style="margin-top:16px"></div>
+      </div>
+
+      <!-- BEVERAGES -->
+      <div class="fr-section" id="fr-beverages">
+        <h2 class="fr-section-title" data-i18n="frBeverageTitle">01 — Beverage Flavors</h2>
+        <div class="fr-section-sub" data-i18n="frBeverageSub">Botanical Refreshment & Intense Citrus</div>
+        <div class="fr-card-grid" id="frBeverageGrid"></div>
+      </div>
+
+      <!-- DAIRY -->
+      <div class="fr-section" id="fr-dairy">
+        <h2 class="fr-section-title" data-i18n="frDairyTitle">02 — Dairy Flavors</h2>
+        <div class="fr-section-sub" data-i18n="frDairySub">Cultured Sourness & Fruit Staples</div>
+        <div class="fr-card-grid" id="frDairyGrid" style="margin-bottom:16px"></div>
+        <div class="fr-insight-block" data-i18n="frFormulationInsight">Les profils vanille et lait concentré jouent également un rôle important…</div>
+      </div>
+
+      <!-- SAVORY -->
+      <div class="fr-section" id="fr-savory">
+        <h2 class="fr-section-title" data-i18n="frSavoryTitle">03 — Savory Flavors</h2>
+        <div class="fr-section-sub" data-i18n="frSavorySub">Regional Spice Blends & Intense Heat</div>
+        <div class="fr-card-grid" id="frSavoryGrid" style="margin-bottom:20px"></div>
+        <div class="fr-spotlight" id="frSuyaSpotlight"></div>
+      </div>
+
+      <!-- REGIONAL MAP -->
+      <div class="fr-section" id="fr-map">
+        <h2 class="fr-section-title" data-i18n="frMapTitle">Regional Flavor Map</h2>
+        <div class="fr-section-sub" data-i18n="frMapHint">Survolez une région pour voir ses tendances</div>
+        <div class="fr-region-grid" id="frRegionGrid" style="margin-bottom:26px"></div>
+
+        <h3 class="fr-section-title" style="font-size:16px" data-i18n="frMatrixTitle">Flavor × Application Matrix</h3>
+        <div class="fr-section-sub" data-i18n="frMatrixHint">Cliquez sur une saveur pour voir ses applications</div>
+        <div class="fr-matrix-flavors" id="frMatrixFlavors"></div>
+        <div class="fr-matrix-result" id="frMatrixResult"></div>
+      </div>
+
+      <!-- OPPORTUNITIES -->
+      <div class="fr-section" id="fr-opportunities">
+        <h2 class="fr-section-title" data-i18n="frOppTitle">Flavor Opportunities for Africa</h2>
+        <div class="fr-opp-grid" id="frOppGrid" style="margin-top:16px"></div>
+      </div>
+
+      <div class="fr-section">
+        <h2 class="fr-section-title" data-i18n="frAromatechTitle">What does this mean for Aromatech?</h2>
+        <div class="fr-aromatech-grid" id="frAromatechGrid" style="margin-top:16px"></div>
+        <a class="fr-cta" href="#" onclick="document.querySelector('[data-view=opportunities]').click();return false" data-i18n="frCta">Explore Flavor Opportunities →</a>
+      </div>
+
+      <div class="fr-section">
+        <h2 class="fr-section-title" style="font-size:14px;color:var(--gray-500)" data-i18n="frSourcesTitle">Sources & References</h2>
+        <div class="fr-sources" id="frSources" style="margin-top:10px"></div>
+      </div>
+
+      <div class="fr-footer">
+        <b>AROMATECH AFRIQUE</b><br>
+        <span data-i18n="frFooterTagline">Flavoring solutions • Innovation • Market Insights</span><br>
+        Tunisia | Algeria | Africa — 2026
+      </div>
+
+      <button class="fr-backtotop" id="frBackToTop" title="Back to top">↑</button>
+    </section>
+
+    <!-- ============ BEVERAGE TRENDS 2026 ============ -->
+    <section class="view" id="view-beverage-trends">
+      <div class="level-strip">
+        <span class="level-chip" data-i18n="level1">QUOI ?</span>
+        <span class="level-chip" data-i18n="level3">ET ALORS ?</span>
+      </div>
+
+      <div class="editorial-block">
+        <div class="kicker" data-i18n="navBeverageTrends">Beverage Trends</div>
+        <h1 data-i18n="bevTrendsTitle">Africa Beverage Trends 2026</h1>
+        <div class="subtitle" data-i18n="bevTrendsSubtitle">Beyond flavor: the forces reshaping Africa's beverage industry</div>
+        <p data-i18n="bevTrendsIntro">Les consommateurs africains attendent désormais davantage de leurs boissons…</p>
+      </div>
+
+      <div class="view-head">
+        <div><h2 style="font-size:17px" data-i18n="consumerDrivers">Consumer Drivers</h2></div>
+      </div>
+      <div class="card" style="padding:22px 26px;margin-bottom:26px">
+        <div class="driver-grid" id="driverGrid"></div>
+      </div>
+
+      <div class="view-head">
+        <div><h2 style="font-size:17px" data-i18n="navBeverageTrends">Beverage Trends</h2></div>
+      </div>
+      <div class="filters-bar">
+        <select class="filter-select" id="filterTrendType"></select>
+      </div>
+      <div class="bevtrend-grid" id="bevTrendGrid" style="margin-bottom:30px"></div>
+
+      <div class="view-head">
+        <div><h2 style="font-size:17px" data-i18n="matrixTitle">Flavor × Industry Trend Matrix</h2></div>
+      </div>
+      <div class="card" style="padding:22px 26px;margin-bottom:30px">
+        <p style="font-size:12px;color:var(--gray-500);margin:0 0 14px" data-i18n="matrixHint">Cliquez sur une tendance pour voir les saveurs associées</p>
+        <div class="matrix-wrap" id="matrixChips"></div>
+        <div class="matrix-flavors" id="matrixFlavors"></div>
+      </div>
+
+      <div class="view-head">
+        <div><h2 style="font-size:17px" data-i18n="aromatechTitle">What This Means for Aromatech Africa</h2></div>
+      </div>
+      <div class="aromatech-grid" id="aromatechGrid" style="margin-bottom:26px"></div>
+
+      <div class="editorial-block">
+        <blockquote data-i18n="finalInsight1">Les consommateurs demandent désormais davantage à leurs boissons…</blockquote>
+        <blockquote data-i18n="finalInsight2" style="margin-top:10px">L'enjeu n'est pas de suivre toutes les tendances mondiales…</blockquote>
+      </div>
+    </section>
+
+    <!-- ============ AFRICAN FLAVOR LIBRARY ============ -->
+    <section class="view" id="view-flavor-library">
+      <div class="view-head">
+        <div><div class="eyebrow" data-i18n="flavorLibrarySub">Ingrédients locaux, repositionnement moderne</div><h2>🌿 <span data-i18n="flavorLibraryTitle">Africa's Untapped Flavor Library</span></h2></div>
+      </div>
+      <div class="library-grid" id="libraryGrid"></div>
+    </section>
+
+    <!-- ============ COUNTRY VIEW ============ -->
+    <section class="view" id="view-country">
+      <div class="level-strip">
+        <span class="level-chip" data-i18n="level2">OÙ ?</span>
+      </div>
+      <div class="view-head">
+        <div><div class="eyebrow" data-i18n="countryViewSub">Sélectionnez un marché pour filtrer innovations et tendances</div><h2>🌍 <span data-i18n="countryViewTitle">Country View</span></h2></div>
+      </div>
+      <div class="filters-bar">
+        <select class="filter-select" id="filterCountry"></select>
+      </div>
+      <div class="view-head"><div><h2 style="font-size:16px" data-i18n="navLatest">Latest Innovations</h2></div></div>
+      <div class="cards-grid" id="countryGrid" style="margin-bottom:28px"></div>
+      <div class="view-head"><div><h2 style="font-size:16px" data-i18n="navBeverageTrends">Beverage Trends</h2></div></div>
+      <div class="bevtrend-grid" id="countryBevTrendGrid"></div>
+    </section>
+
+    <!-- ============ MARKET OPPORTUNITIES ============ -->
+    <section class="view" id="view-opportunities">
+      <div class="view-head">
+        <div><div class="eyebrow" data-i18n="oppSub">Lecture marketing indicative — non commerciale</div><h2>🔥 <span data-i18n="oppTitle">Market Opportunities</span></h2></div>
+      </div>
+      <div class="opp-grid" id="oppGrid" style="margin-bottom:26px"></div>
+      <div class="view-head"><div><h2 style="font-size:17px" data-i18n="scoringTitle">Strategic Priority</h2></div></div>
+      <div class="card" style="padding:18px 22px">
+        <table class="sources-table" id="scoringTable"><thead><tr>
+          <th data-i18n="navBeverageTrends">Trend</th><th>Market</th><th>African</th><th>Flavor</th><th>Innovation</th><th data-i18n="overallScore">Score</th>
+        </tr></thead><tbody id="scoringTbody"></tbody></table>
+        <p style="font-size:11px;color:var(--gray-500);margin-top:12px" data-i18n="scoringNote">Ces scores sont une évaluation stratégique indicative…</p>
+      </div>
+    </section>
+
+    <!-- ============ CLIENT WATCH ============ -->
+    <section class="view" id="view-client-watch">
+      <div class="view-head">
+        <div><div class="eyebrow" data-i18n="watchAddTitle">Ajouter une entreprise à surveiller</div><h2>👥 <span data-i18n="navClientWatch">Veille Clients</span></h2></div>
+      </div>
+      <form class="watch-form" id="clientWatchForm">
+        <input type="text" name="name" data-i18n-placeholder="watchNamePlaceholder" placeholder="Nom de l'entreprise" required>
+        <input type="url" name="url" data-i18n-placeholder="watchUrlPlaceholder" placeholder="Site web (https://…)" required>
+        <input type="url" name="feedUrl" data-i18n-placeholder="watchFeedPlaceholder" placeholder="Flux RSS (optionnel)">
+        <button type="submit" class="btn btn-primary"><span data-i18n="watchAddBtn">Ajouter</span></button>
+      </form>
+      <p class="watch-note" data-i18n="watchAutoDiscoveryNote">À l'ajout, le système essaie de détecter automatiquement un flux RSS…</p>
+      <div class="watch-grid" id="clientWatchGrid"></div>
+    </section>
+
+    <!-- ============ COMPETITOR WATCH ============ -->
+    <section class="view" id="view-competitor-watch">
+      <div class="view-head">
+        <div><div class="eyebrow" data-i18n="watchAddTitle">Ajouter une entreprise à surveiller</div><h2>🎯 <span data-i18n="navCompetitorWatch">Veille Concurrents</span></h2></div>
+      </div>
+      <form class="watch-form" id="competitorWatchForm">
+        <input type="text" name="name" data-i18n-placeholder="watchNamePlaceholder" placeholder="Nom de l'entreprise" required>
+        <input type="url" name="url" data-i18n-placeholder="watchUrlPlaceholder" placeholder="Site web (https://…)" required>
+        <input type="url" name="feedUrl" data-i18n-placeholder="watchFeedPlaceholder" placeholder="Flux RSS (optionnel)">
+        <button type="submit" class="btn btn-primary"><span data-i18n="watchAddBtn">Ajouter</span></button>
+      </form>
+      <p class="watch-note" data-i18n="watchAutoDiscoveryNote">À l'ajout, le système essaie de détecter automatiquement un flux RSS…</p>
+      <div class="watch-grid" id="competitorWatchGrid"></div>
+    </section>
+
+    <!-- ============ MY SHORTLIST ============ -->
+    <section class="view" id="view-shortlist">
+      <div class="view-head">
+        <div><div class="eyebrow" data-i18n="shortlistSub">Vos innovations et tendances sauvegardées</div><h2>⭐ <span data-i18n="shortlistTitle">My Shortlist</span></h2></div>
+      </div>
+      <div class="view-head"><div><h2 style="font-size:16px" data-i18n="navLatest">Latest Innovations</h2></div></div>
+      <div class="cards-grid" id="shortlistInnoGrid" style="margin-bottom:28px"></div>
+      <div class="view-head"><div><h2 style="font-size:16px" data-i18n="navBeverageTrends">Beverage Trends</h2></div></div>
+      <div class="bevtrend-grid" id="shortlistBevGrid"></div>
+    </section>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="view" id="view-sources">
+      <div class="view-head">
+        <div><div class="eyebrow" data-i18n="navSources">Sources</div><h2>🔗 <span data-i18n="sourcesTitle">Sources Monitored</span></h2></div>
+        <button class="btn btn-ghost" id="syncBtn2" onclick="document.getElementById('syncBtn').click()">
+          <span data-i18n="syncNow">SYNC NOW</span>
+        </button>
+      </div>
+      <table class="sources-table">
+        <thead>
+          <tr>
+            <th data-i18n="colSource">Source</th>
+            <th data-i18n="colCategory">Catégorie</th>
+            <th data-i18n="colCountry">Pays</th>
+            <th data-i18n="colStatus">Statut</th>
+            <th data-i18n="colLastSync">Dernier sync</th>
+          </tr>
+        </thead>
+        <tbody id="sourcesTbody"></tbody>
+      </table>
+
+      <div class="view-head" style="margin-top:28px">
+        <div><h2 style="font-size:16px" data-i18n="manualLinksTitle">Liens de référence (consultation manuelle)</h2></div>
+      </div>
+      <p style="font-size:12px;color:var(--gray-500);margin:-8px 0 12px" data-i18n="manualLinksNote">LinkedIn ne propose plus de flux RSS depuis 2013…</p>
+      <div class="fr-sources" id="manualLinksList"></div>
+    </section>
+
+  </main>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
